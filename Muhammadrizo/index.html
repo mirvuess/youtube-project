@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
+
+
+  <section class="mx-auto p-4">
+    <div class="flex justify-between items-center">
+      <div class="flex gap-6 items-center">
+        <button id="menu-toggle" type="button" class="text-white text-2xl focus:outline-none">
+          ☰
+        </button>
+        <img src="./youtube-logo.svg" alt="YouTube" class="h-6" />
+      </div>
+      <div class="flex items-center w-full max-w-2xl px-4">
+        <div class="flex w-full border border-gray-700 overflow-hidden shadow-sm bg-black">
+          <input type="text" placeholder="Поиск" class="w-full px-4 py-2 text-gray-200 focus:outline-none" />
+          <button class="px-4 bg-gray-600 hover:bg-gray-200 transition-colors cursor-pointer">
+            <img src="./search.svg" alt="Search" />
+          </button>
+        </div>
+      </div>
+      <div class="flex gap-2 items-center">
+        <button type="button"><img src="./header-button.svg" alt="" /></button>
+        <button type="button"><img src="./2btn.svg" alt="" /></button>
+        <button type="button"><img src="./not.svg" alt="" /></button>
+        <button type="button"><img src="./ava.svg" alt="" /></button>
+      </div>
+    </div>
+  </section>
+
+  <aside id="sidebar"
+    class="fixed top-0 left-0 w-64 h-full bg-gray-800 transform -translate-x-full transition-transform duration-300 z-50 overflow-y-auto">
+    <div class="p-4">
+      <div class="flex justify-end">
+        <button id="close-btn" class="text-white text-2xl">&times;</button>
+      </div>
+
+      <ul class="mt-4 space-y-2">
+        <li><a href="#" data-page="asosiy" class="menu-link flex items-center"><span class="mr-2">🏠</span>Asosiy</a></li>
+        <li><a href="#" data-page="tarix" class="menu-link flex items-center"><span class="mr-2">📜</span>Tomosha tarixi</a></li>
+        <li><a href="#" data-page="pleylist" class="menu-link flex items-center"><span class="mr-2">🎵</span>Pleylistlar</a></li>
+        <li><a href="#" data-page="keyinroq" class="menu-link flex items-center"><span class="mr-2">⏰</span>Keyinroq</a></li>
+        <li><a href="#" data-page="yoqqan" class="menu-link flex items-center"><span class="mr-2">👍</span>Yoqqan videolar</a></li>
+      </ul>
+    </div>
+  </aside>
+
+
+  <main id="content" class="p-6 ml-0 md:ml-64 transition-all duration-300">
+    <h2 class="text-2xl font-bold mb-4">Asosiy sahifa</h2>
+    <p>Bu yerda asosiy kontent ko‘rsatiladi.</p>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
